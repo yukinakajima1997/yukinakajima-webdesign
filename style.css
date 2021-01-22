@@ -122,7 +122,7 @@ h2{
 header{
 	width: 100%;
 	height: auto;
-	background: url(https://github.com/yukinakajima1997/yukinakajima-webdesign/blob/main/heroimage.png?raw=true);
+	background: url(images/heroimage.png);
 	z-index: 1;
 }
 
