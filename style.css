@@ -265,9 +265,14 @@ figure img:nth-child(even){
 }
 
 div.works-title{
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+div.works-title, figcaption p{
 	font-size: 12px;
-	line-height: 20px;
 	width: 422px;
+	line-height: 20px;
 	text-align: center;
 }
 
@@ -288,9 +293,12 @@ figure img:nth-child(even){
 	margin-left: 0;
 }
 div.works-title{
-	text-align: left;
 	margin-top: 10px;
-	max-width: 100%
+	padding:2px;
+}
+div.works-title, figcaption p{
+	max-width: 100%;
+	text-align: left;
 }
 }
 
