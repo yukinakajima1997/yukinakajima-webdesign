@@ -225,14 +225,21 @@ div#nav-inner nav ul li a{
 
 @media screen and (max-width: 768px){
 
+.profile-item{
+	text-align: center;
+}
 .profile-image-wrapper img{
- 	width: 60vw;
+ 	width: 70%;
 }
 .profile-body{
 	margin-left: 0;
+	text-align: left;
 }
 .profile-body ul{
 	margin-top: 40px;
+}
+.profile-body ul br{
+	display: none;
 }
 .profile-body ul li dl dt{
 	margin-bottom: 15px;
