@@ -1,4 +1,10 @@
 
+$(function () {
+  $('.js-btn').on('click', function () {       
+    $('.menu , .btn-line').toggleClass('open'); 
+  })
+});
+
 $(function(){
   var pagetop = $('#page_top');
   pagetop.hide();
