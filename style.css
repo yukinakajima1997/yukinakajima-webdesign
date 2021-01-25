@@ -125,6 +125,9 @@ header{
 	background: url(images/heroimage.png);
 	z-index: 1;
 }
+.btn{
+	display: none;
+}
 
 div#header-inner{
 	width:100%;
@@ -184,13 +187,84 @@ div#nav-inner nav ul li a:hover::after {
 div#header-inner{
 	background-size: contain;
 }	
-div#nav-inner nav ul li{
-	padding-right: 20px;
-	margin-right: 0;
-	box-sizing: border-box;
+.btn {
+  display: block;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  z-index: 10;
+  border:none;
+  opacity: 0.7;
+  background-color: #fff; /* わかりやすいように */
+}
+.btn-line {
+  display: block;
+  position: relative;  
+  width: 100%;  
+  height: 4px;
+  background-color: #ff9e5e;  
+  transition: .2s;
+}
+.btn-line::before,
+.btn-line::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ff9e5e;
+  transition: .5s;
+}
+.btn-line::before {
+  transform: translateY(-16px);
+}
+.btn-line::after {
+  transform: translateY(16px);
+}
+.btn-line.open {
+	background-color: transparent;  	
+}
+.btn-line.open::before , 
+.btn-line.open::after {
+	content: "";
+	transition: .2s;
+}
+.btn-line.open::before {
+	transform: rotate(45deg);  
+}
+.btn-line.open::after {
+	transform: rotate(-45deg);  
+}
+#nav-inner{
+	background-color: transparent;
+}
+.menu{
+	height: 100vh;
+	position: fixed;
+	right: -70%;
+	top:-30px;
+	width: 70%;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	color: #000;
+	background-color:#fff;
+	transition: .3s;
+}
+.menu.open {
+  right: 0;
+}
+.gnav-item{
+	width: 100%;
+    height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 div#nav-inner nav ul li a{
-	font-size: 13px;
+	font-size: 16px;
 }
 }
 /* ========================================
@@ -290,10 +364,11 @@ div.works-title, figcaption p{
 .work-item{
 	margin-bottom: 50px;
 	margin-right: 0;
-	max-width: 100%
+	max-width: 100%;
+	text-align: center;
 }
 figure img{
-	width: 80vw;
+	width: 70vw;
 	height: auto;
 }
 figure img:nth-child(even){
@@ -305,7 +380,7 @@ div.works-title{
 }
 div.works-title, figcaption p{
 	max-width: 100%;
-	text-align: left;
+	text-align: center;
 }
 }
 
@@ -344,9 +419,12 @@ div.feature-body p span.text-bold{
 }
 
 @media screen and (max-width: 768px){
+.feature-image-wrapper{
+	text-align: center;
+}
 .feature-image-wrapper img{
 	height: auto;
-	width: 80vw;
+	width: 80%;
 }
 div.feature-body{
 	width: 90vw;
