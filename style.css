@@ -270,20 +270,23 @@ div#nav-inner nav ul li a{
 /* ========================================
     profile
 ========================================= */
+
+
 .profile-image-wrapper{
-	float: left;
-	height: auto;
+	display: inline-block;
+	width: 30%;
 }
 
 .profile-body {
 	margin-left: 60px;
-	float: left;
+	display: inline-block;
+	width: 60%;
 }
 
 .profile-body ul li dl dt{
 	font-size: 24px;
 	color: #ff9e5e;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	font-weight: 600;
 }
 
@@ -302,10 +305,19 @@ div#nav-inner nav ul li a{
 .profile-item{
 	text-align: center;
 }
+
+.profile-image-wrapper{
+	width: 100%;
+ 	display: inline-block;
+ 	text-align: center;
+}
+
 .profile-image-wrapper img{
- 	width: 70%;
+ 	
 }
 .profile-body{
+	width: 100%;
+	display: inline-block;
 	margin-left: 0;
 	text-align: left;
 }
@@ -329,17 +341,20 @@ div#nav-inner nav ul li a{
 figure.work-item{
 	float: left;
 	margin-right: 60px;
-	
-}
-
-.upper{
-	margin-bottom: 60px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 figure img{
-	width: 422px;
-	height: 336px;
+	max-width: 422px;
+	height: auto;
 }
+
+figure img:5th-child{
+	height: 640px;
+	width: 320px;
+}
+
 
 figure img:nth-child(even){
 	margin-left: 127px;
