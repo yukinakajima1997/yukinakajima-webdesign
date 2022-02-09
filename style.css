@@ -270,8 +270,6 @@ div#nav-inner nav ul li a{
 /* ========================================
     profile
 ========================================= */
-
-
 .profile-image-wrapper{
 	display: inline-block;
 	width: 30%;
@@ -284,9 +282,9 @@ div#nav-inner nav ul li a{
 }
 
 .profile-body ul li dl dt{
-	font-size: 24px;
+	font-size: 30px;
 	color: #ff9e5e;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	font-weight: 600;
 }
 
@@ -321,9 +319,7 @@ div#nav-inner nav ul li a{
 	margin-left: 0;
 	text-align: left;
 }
-.profile-body ul{
-	margin-top: 40px;
-}
+
 .profile-body ul br{
 	display: none;
 }
@@ -341,20 +337,17 @@ div#nav-inner nav ul li a{
 figure.work-item{
 	float: left;
 	margin-right: 60px;
-	margin-bottom: 30px;
 	text-align: center;
+}
+
+.work-item{
+	margin-bottom: 60px;
 }
 
 figure img{
 	max-width: 422px;
-	height: auto;
+	max-height: 799px;
 }
-
-figure img:5th-child{
-	height: 640px;
-	width: 320px;
-}
-
 
 figure img:nth-child(even){
 	margin-left: 127px;
@@ -370,6 +363,20 @@ div.works-title, figcaption p{
 	width: 422px;
 	line-height: 20px;
 	text-align: center;
+}
+
+.banner{
+	width: 320px;
+	height: 160px;
+}
+
+.banner3{
+	width: 250px;
+	height: 250px;
+}
+
+.bottom{
+	margin-bottom: 0px;
 }
 
 @media screen and (max-width: 768px){
@@ -426,10 +433,10 @@ div.feature-body p{
 }
 
 div.feature-body p span.text-bold{
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	display: inline-block;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	color: #ff9e5e;
 }
 
