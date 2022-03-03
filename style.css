@@ -273,6 +273,7 @@ div#nav-inner nav ul li a{
 .profile-image-wrapper{
 	display: inline-block;
 	width: 30%;
+	vertical-align: top;
 }
 
 .profile-body {
@@ -410,6 +411,10 @@ div.works-title, figcaption p{
 /* ========================================
     feature
 ========================================= */
+.feature-item{
+    height: 600px;
+}
+
 .feature-image-wrapper{
 	float: left;
 }
@@ -433,7 +438,7 @@ div.feature-body p{
 }
 
 div.feature-body p span.text-bold{
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 	display: inline-block;
 	padding-bottom: 15px;
@@ -547,7 +552,5 @@ footer{
 	color: #ff9e5e;
 	height: 40px;
 }
-
-
 
 
